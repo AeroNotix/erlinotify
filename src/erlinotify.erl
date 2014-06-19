@@ -65,7 +65,7 @@ unwatch(Name) ->
 %%----------------------------------------------------------------------
 
 -spec init(term())
-    -> {ok, term()} | {ok, term(), non_neg_integer() | infinity} 
+    -> {ok, term()} | {ok, term(), non_neg_integer() | infinity}
     | ignore | {stop, term()}.
 init([]) ->
     {ok, Fd} = erlinotify_nif:start(),
